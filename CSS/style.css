@@ -1,6 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
 .container {
   width: 300px;
-  height: 1s00px;
+  height: 100px;
   border: 2px dashed red;
 }
 .holder {
@@ -11,23 +17,23 @@
   width: 100px;
   height: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.item>.item-third {
-  align-self: flex-end;
+
+  border: 1px solid black;
 }
 .item-first {
   order: -2;
   flex-grow: 2;
 }
+/* Додай до айтемів що три менші flex-basis: calc(100% / 3); */
 .item-second {
   order: 1;
+  flex-basis: calc(100% / 3);
 }
 .item-third {
-
+  flex-basis: calc(100% / 3);
 }
 .item-fourth {
+  flex-basis: calc(100% / 3);
   order: 3;
 }
 .item-fifth {
