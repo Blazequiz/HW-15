@@ -1,0 +1,36 @@
+.container {
+  width: 300px;
+  height: 1s00px;
+  border: 2px dashed red;
+}
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item>.item-third {
+  align-self: flex-end;
+}
+.item-first {
+  order: -2;
+  flex-grow: 2;
+}
+.item-second {
+  order: 1;
+}
+.item-third {
+
+}
+.item-fourth {
+  order: 3;
+}
+.item-fifth {
+  order: -1;
+  flex-grow: 2;
+}
